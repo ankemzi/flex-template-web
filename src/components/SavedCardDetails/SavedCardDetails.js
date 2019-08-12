@@ -122,6 +122,9 @@ const SavedCardDetails = props => {
   const arrowStyle = {
     transform: `rotate(${arrowDeg}deg)`,
     transition: 'transform 0.5s ease-out',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   };
 
   const replaceCardTitle = intl.formatMessage({
