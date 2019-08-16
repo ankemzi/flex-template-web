@@ -14,6 +14,7 @@ way to update this template, but currently, we follow a pattern:
 
 ## Upcoming version 2019-XX-XX
 
+- [fix] Rehydrate bug: existing DOM elements were populated incorrectly [#1154](https://github.com/sharetribe/flex-template-web/pull/1154)
 - [add] Add new French and Spanish translations related to keyword search and Spanish translations
   related to payment intents. [#1148](https://github.com/sharetribe/flex-template-web/pull/1148)
 - [add] Add new French translations related to payment intents. Also few small changes to en.json
