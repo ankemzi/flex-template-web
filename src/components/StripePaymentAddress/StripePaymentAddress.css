@@ -22,16 +22,7 @@
   margin-bottom: 24px;
 }
 
-.postalCode {
-  margin-top: 24px;
-  width: calc(40% - 9px);
-}
-
-.city {
-  margin-top: 24px;
-  width: calc(60% - 9px);
-}
-
 .field {
+  width: calc(50% - 12px);
   margin-top: 24px;
 }

@@ -824,7 +824,7 @@
   "StripePaymentAddress.addressLine1Label": "Street address",
   "StripePaymentAddress.addressLine1Placeholder": "123 Example Street",
   "StripePaymentAddress.addressLine1Required": "Street address is required",
-  "StripePaymentAddress.addressLine2Label": "Apt, suite, building # {optionalText}",
+  "StripePaymentAddress.addressLine2Label": "Apt # {optionalText}",
   "StripePaymentAddress.addressLine2Placeholder": "A 42",
   "StripePaymentAddress.cityLabel": "City",
   "StripePaymentAddress.cityPlaceholder": "Helsinki",
