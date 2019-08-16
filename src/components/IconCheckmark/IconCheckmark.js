@@ -15,11 +15,11 @@ const IconCheckmark = props => {
       <svg className={classes} width="16" height="12" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M14 2l-8 8-4-4"
-          stroke-width="2.5"
+          strokeWidth="2.5"
           fill="none"
-          fill-rule="evenodd"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          fillRule="evenodd"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     );

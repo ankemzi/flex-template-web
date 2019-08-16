@@ -6,6 +6,7 @@ import {
   IconArrowHead,
   IconCard,
   IconClose,
+  IconCheckmark,
   Button,
   InlineTextButton,
   Menu,
@@ -154,6 +155,10 @@ const SavedCardDetails = props => {
 
         <MenuContent className={css.menuContent}>
           <MenuItem key="first item" className={css.menuItem}>
+            <IconCheckmark
+              className={active === DEFAULT_CARD ? css.iconCheckmark : css.iconCheckmarkHidden}
+              size="small"
+            />
             <InlineTextButton className={css.menuText} onClick={handleClick(DEFAULT_CARD)}>
               {defaultCard}
             </InlineTextButton>
@@ -162,6 +167,10 @@ const SavedCardDetails = props => {
             {replaceCardTitle}
           </MenuItem>
           <MenuItem key="second item" className={css.menuItem}>
+            <IconCheckmark
+              className={active === REPLACE_CARD ? css.iconCheckmark : css.iconCheckmarkHidden}
+              size="small"
+            />
             <InlineTextButton className={css.menuText} onClick={handleClick(REPLACE_CARD)}>
               {replaceCard}
             </InlineTextButton>

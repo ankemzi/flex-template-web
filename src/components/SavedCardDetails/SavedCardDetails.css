@@ -11,7 +11,7 @@
 
 .savedPaymentMethod {
   display: inline-block;
-  width: 80%;
+  margin-right: auto;
 }
 
 .paymentMethodPlaceholderDesktop {
@@ -33,13 +33,29 @@
 }
 
 .cardIcon {
-  margin: 0 16px;
+  margin: 0 16px 0 4px;
+  width: 24px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .closeIcon {
   @apply --marketplaceModalCloseIcon;
   margin-left: 0;
   margin-right: 5px;
+}
+
+.iconCheckmark {
+  stroke: var(--successColor);
+  display: inline-block;
+  margin: 0 0 0 24px;
+}
+
+.iconCheckmarkHidden {
+  visibility: hidden;
+  display: inline-block;
+  margin: 0 0 0 24px;
 }
 
 .expirationDate {
@@ -60,67 +76,61 @@
 }
 
 .menu {
-  width: 564px;
   max-width: 100%;
   height: auto;
 }
 
 .menuLabel {
   text-align: left;
+  font-weight: 500;
   padding: 0;
+  border-radius: 4px;
+  border: 1px solid var(--matterColorNegative);
   &:focus {
     outline: none;
     background-color: var(--matterColorLight);
-    border-color: transparent;
+    border: 1px solid var(--matterColorNegative);
     text-decoration: none;
     box-shadow: var(--boxShadowFilterButton);
+    border-radius: 4px 4px 0px 0px;
   }
 }
 
-.menuLabelWrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  border: 1px solid var(--matterColorNegative);
-  border-radius: var(--borderRadius);
-  box-shadow: var(--boxShadow);
-  padding: 11px 16px;
-}
-
+.menuLabelWrapper,
 .menuLabelWrapperExpired {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  padding: 15px 24px 15px 16px;
+}
+
+.menuLabelWrapperExpired {
   border: 1px solid var(--failColor);
-  border-radius: var(--borderRadius);
-  box-shadow: var(--boxShadow);
-  padding: 11px 16px;
 }
 
 .menuContent {
-  border-radius: var(--borderRadius);
-  box-shadow: var(--boxShadow);
+  border-radius: 0px 0px 4px 4px;
   border: 1px solid var(--matterColorNegative);
+  border-top: 0;
   padding: 15px 0;
 }
 
 .menuItem {
   color: var(--matterColor);
   &:hover {
-    background-color: var(--matterColorNegative);
+    background-color: #f2f2f2;
   }
 }
 
 .menuText {
   @apply --marketplaceMessageFontStyles;
-  padding: 12px 24px;
+  padding: 12px 16px;
   color: var(--matterColor);
-  width: 100%;
   text-align: left;
+  font-weight: 500;
+  width: 80%;
 
   &:hover {
     text-decoration: none;
@@ -128,7 +138,7 @@
 
   &:focus {
     outline: 0;
-    background-color: var(--matterColorNegative);
+    background-color: #f2f2f2;
   }
 }
 .menuDivider {
